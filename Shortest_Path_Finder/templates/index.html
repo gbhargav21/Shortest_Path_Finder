@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+
+    <title>Team-7</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Check With Database</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h3 class="text-center">Team--5</h3>
+    <h4 class="text-center">Design Project</h4>
+    <div class="container encrypt-container  shadow">
+        <form action="/output/" method="POST">
+            <div class="row">
+                <div class="text-center ">
+                    <div class=" mb-5 form-group ">
+                        <label><strong>location-1</strong></label><br>
+                        <textarea type="text " class="form-control " name="idi"></textarea><br>
+                        <label><strong>location-2</strong></label><br>
+                        <textarea type="text " class="form-control " name="idii"></textarea><br>
+                        <label><strong>location-3</strong></label><br>
+                        <textarea type="text " class="form-control " name="id2"></textarea><br>
+                        <label><strong>location-4</strong></label><br>
+                        <textarea type="text " class="form-control " name="id3"></textarea><br>
+                        <label><strong>location-5</strong></label><br>
+                        <textarea type="text " class="form-control " name="id4"></textarea><br>
+                    </div>
+                    <div class="text-center">
+                        <input type="submit" name="button_check" value="check_similarity" class="btn btn-primary mb-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Check">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </form>
+
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ " crossorigin="anonymous "></script>
+</body>
+
+</html>
